@@ -22,6 +22,16 @@ body {
   justify-content: space-between;
 }
 
+.menu{
+  display: none;
+}
+
+.menu .material-symbols-outlined{
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
 .logo-name {
   font-size: 24px;
   font-style: normal;
@@ -63,10 +73,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   gap: 20px;
-  width:100%;
-  margin: auto;
 }
 
 .content-div {
@@ -207,4 +214,39 @@ input.check-box {
 
 .alternate a{
   color:#25DAC5 ;
+}
+
+
+@media screen and (max-width : 1000px) {
+  .main-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 200px;
+  }
+  .nav-items{
+    display: none;
+  }
+
+  .menu{
+    display: block;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width : 836px) {
+  
 }
